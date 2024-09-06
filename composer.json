@@ -1,0 +1,37 @@
+{
+    "name": "yakovenko/laravel-class-generator",
+    "description": "A Laravel package to generate Utility, Service, Trait and Helper classes",
+    "keywords": ["laravel", "custom", "utility", "service", "trait", "helper", "make-class", "generate", "artisan", "artisan command", "code generation"],
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Alexander Yakovenko",
+            "email": "paffen.web@gmail.com",
+            "homepage": "https://github.com/as-yakovenko"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": "^8.0 || ^9.0 || ^10.0 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yakovenko\\LaravelClassGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yakovenko\\LaravelClassGenerator\\LaravelClassServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
