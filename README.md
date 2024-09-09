@@ -70,6 +70,6 @@ php artisan yas:trait Example
 
 This will create an `ExampleTrait` class in the `App\Traits` directory.
 
-### Author
+**Author**
 
 - **Alexander Yakovenko** - [GitHub](https://github.com/as-yakovenko) - [Email](mailto:paffen.web@gmail.com)
