@@ -31,6 +31,19 @@ or add the repository to your project's `composer.json` file:
 ],
 ```
 
+**Registration provider**
+
+You need to add your service provider to the providers array in your Laravel application's ```config/app.php``` file:
+
+```php
+'providers' => [
+    /*
+     * Package Service Providers...
+     */
+    Yakovenko\LaravelClassGenerator\LaravelClassServiceProvider::class,
+],
+```
+
 ### Usage
 
 **Generating a Service**

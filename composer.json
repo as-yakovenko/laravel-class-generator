@@ -20,13 +20,6 @@
             "Yakovenko\\LaravelClassGenerator\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Yakovenko\\LaravelClassGenerator\\LaravelClassServiceProvider"
-            ]
-        }
-    },
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true
