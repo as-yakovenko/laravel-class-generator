@@ -2,10 +2,10 @@
 
 namespace Yakovenko\LaravelClassGenerator\Commands;
 
-use Illuminate\Console\Command;
+use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
 
-class GenerateHelperCommand extends Command
+class GenerateHelperCommand extends GeneratorCommand
 {
     protected $signature    = 'yas:helper {name}';
     protected $description  = 'Generate a new Helper class';

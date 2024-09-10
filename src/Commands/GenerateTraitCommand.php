@@ -2,10 +2,10 @@
 
 namespace Yakovenko\LaravelClassGenerator\Commands;
 
-use Illuminate\Console\Command;
-use Illuminate\Filesystem\Filesystem;
+use Illuminate\Console\GeneratorCommand;
+use Symfony\Component\Console\Input\InputOption;
 
-class GenerateTraitCommand extends Command
+class GenerateTraitCommand extends GeneratorCommand
 {
     protected $signature    = 'yas:trait {name}';
     protected $description  = 'Generate a new Trait class';

@@ -2,10 +2,10 @@
 
 namespace Yakovenko\LaravelClassGenerator\Commands;
 
-use Illuminate\Console\Command;
+use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
 
-class GenerateUtilityCommand extends Command
+class GenerateUtilityCommand extends GeneratorCommand
 {
     protected $signature    = 'yas:utility {name}';
     protected $description  = 'Generate a new Utility class';
