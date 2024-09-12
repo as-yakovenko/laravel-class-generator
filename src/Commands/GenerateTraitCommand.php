@@ -43,6 +43,8 @@ class GenerateTraitCommand extends GeneratorCommand
         $name   = $this->qualifyClass( $name );
         $class  = str_replace( $this->getNamespace( $name ) . '\\', '', $name );
 
+        $class .= 'Trait';
+
         return str_replace(['DummyClass', '{{ class }}', '{{class}}'], $class, $stub);
     }
 

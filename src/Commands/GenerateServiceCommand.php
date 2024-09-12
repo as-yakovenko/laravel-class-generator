@@ -43,6 +43,8 @@ class GenerateServiceCommand extends GeneratorCommand
         $name   = $this->qualifyClass( $name );
         $class  = str_replace( $this->getNamespace( $name ) . '\\', '', $name );
 
+        $class .= 'Service';
+
         return str_replace(['DummyClass', '{{ class }}', '{{class}}'], $class, $stub);
     }
 
