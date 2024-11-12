@@ -5,14 +5,14 @@
 [![License](https://img.shields.io/packagist/l/yakovenko/laravel-class-generator.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 
-`yakovenko/laravel-class-generator` - A Laravel package to generate Utility, Service, Trait, and Helper classes with ease.
+`yakovenko/laravel-class-generator` - A Laravel package designed to simplify the creation of various class types, including Utility, Service, Trait, Helper, and Enum classes, through Artisan commands. Ideal for Laravel projects of any scale, this package reduces repetitive setup and keeps your codebase organized.
 
 ## Installation
 
 ### Requirements
 
-- PHP               : >=8.0
-- Laravel           : ^8.0 || ^9.0 || ^10.0 || ^11.0
+- PHP     : >=8.1 (due to enum support)
+- Laravel : ^8.0 || ^9.0 || ^10.0 || ^11.0
 
 You can install the package via Composer:
 
@@ -47,41 +47,54 @@ You need to add your service provider to the providers array in your Laravel app
 ### Usage
 
 **Generating a Service**
-To generate a new service class, use the following Artisan command:
+
+Create a new service class using:
 
 ```bash
 php artisan yas:service Stand\\Stand
 ```
 
-This will create a `StandService` class in the `App\Services\Stand` directory.
+This will generate `StandService` in the `App\Services\Stand` directory.
 
 **Generating a Utility**
-To generate a new utility class, use the following Artisan command:
+
+Create a new utility class with:
 
 ```bash
 php artisan yas:utility User
 ```
 
-This will create a `UserUtility` class in the `App\Utilities` directory.
+This command creates `UserUtility` in `App\Utilities`.
 
 **Generating a Helper**
-To generate a new helper class, use the following Artisan command:
+
+To create a helper class:
 
 ```bash
 php artisan yas:helper File
 ```
 
-This will create a `FileHelper` class in the `App\Helpers` directory.
+This creates `FileHelper` in `App\Helpers`.
 
 **Generating a Trait**
 
-To generate a new trait class, use the following Artisan command:
+To generate a new trait:
 
 ```bash
 php artisan yas:trait Example
 ```
 
-This will create an `ExampleTrait` class in the `App\Traits` directory.
+This generates `ExampleTrait` in `App\Traits`.
+
+**Generating an Enum**
+
+Easily generate enum classes with the command:
+
+```bash
+php artisan yas:enum Status
+```
+
+This will create a `StatusEnum` in `App\Enums`, which includes basic functionality, such as `values()` to list all enum values.
 
 **Author**
 

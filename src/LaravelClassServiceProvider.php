@@ -7,6 +7,7 @@ use Yakovenko\LaravelClassGenerator\Commands\GenerateServiceCommand;
 use Yakovenko\LaravelClassGenerator\Commands\GenerateUtilityCommand;
 use Yakovenko\LaravelClassGenerator\Commands\GenerateHelperCommand;
 use Yakovenko\LaravelClassGenerator\Commands\GenerateTraitCommand;
+use Yakovenko\LaravelClassGenerator\Commands\GenerateEnumCommand;
 
 class LaravelClassServiceProvider extends ServiceProvider
 {
@@ -17,6 +18,7 @@ class LaravelClassServiceProvider extends ServiceProvider
             GenerateUtilityCommand::class,
             GenerateHelperCommand::class,
             GenerateTraitCommand::class,
+            GenerateEnumCommand::class,
         ]);
     }
 
