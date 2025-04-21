@@ -12,7 +12,7 @@
 ### Requirements
 
 - PHP     : >=8.1 (due to enum support)
-- Laravel : ^8.0 || ^9.0 || ^10.0 || ^11.0
+- Laravel : ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0"
 
 You can install the package via Composer:
 
